@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="styles.css">
+    <title>Criar Formulário de Pesquisa</title>
+  </head>
+
+  <body>
+    <div class="container">
+
+      <header class="header">
+        <h1 id="title">Formulário de Inscrição</h1>
+
+        <p id="description"><em>Vamos saber um pouco sobre você...</em></p>
+    </header>
+
+    <form id="survey-form">
+
+<!-- name-->
+      <div class="form-group">
+        <label id="name-label" for="name">Nome</label>
+        <input id="name" name="name" type="text" required class="form-control" placeholder="Enter your Name" value="" />
+      </div>
+<!-- email-->
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input type="email" id="email" name="email" class="form-control" required placeholder="Enter your Email"/>
+      </div>
+<!-- age-->
+      <div class="form-group">
+        <label id="number-label" for="number">Idade</label>
+        <input id="number" name="age" type="number" min="10" max="99" placeholder="Age" class="form-control" />
+      </div>
+
+<!-- dropdown-->
+      <div class="form-group">
+        <p>Qual opção melhor escreve sua ocupação atual?</p>
+        <select id="dropdown" name="ocupacao" class="form-control" required>
+          <option disabled selected value >Selecione sua ocupação</option>
+          <option>Estudante</option>
+          <option>Estagiário</option>
+          <option>Desempregado</option>
+          <option>Prefiro não informar</option>
+          <option>Outro</option>
+        </select>
+      </div>
+
+<!-- radio button -->
+      <div class="form-group">
+        <p>Você recomendaria o freeCodeCamp para um amigo?</p>
+        <label><input name="user-recomend" value="definitivamente" type="radio" class="input-radio"> Definitivamente</label>
+        <label><input name="user-recomend" value="talvez" type="radio" class="input-radio"> Talvez</label>
+        <label><input name="user-recomend" value="acho-que-nao" type="radio" class="input-radio"> Acho que não</label>
+      </div>
+
+<!-- checkbox -->
+      <div class="form-group">
+        <p>Em quê você gostaria de melhorar?</p>
+        <label><input name="prefer" type="checkbox" value="projetos-front-end" class="input-checkbox">Projetos Front-End</label>
+        <label><input name="prefer" type="checkbox" value="projetos-back-end" class="input-checkbox">Projetos Back-End</label>
+        <label><input name="prefer" type="checkbox" value="visualizacao-dados" class="input-checkbox">Visualização de Dados</label>
+        <label><input name="prefer" type="checkbox" value="desafios" class="input-checkbox">Desafios</label>
+        <label><input name="prefer" type="checkbox" value="open-source" class="input-checkbox">Open Source</label>
+        <label><input name="prefer" type="checkbox" value="cursos-adicionais" class="input-checkbox">Curso Adicionais</label>
+        <label><input name="prefer" type="checkbox" value="forum" class="input-checkbox">Forum</label>
+      </div>
+<!-- comments -->
+      <div class="form-group">
+        <p>Gostaria de nos enviar comentários ou sugestões?</p>
+        <textarea id="comentarios" class="input-textarea" name="comentario" placeholder="Adicione aqui seus comentários..."> </textarea>
+      </div>
+
+<!-- submit -->
+      <div class="form-group">
+        <button id="submit" type="submit" class="submit-button"> Enviar </button>
+      </div>
+
+
+    </form>
+  </div>
+
+  <footer>
+    By Douglas Caique</footer>
+  </body>
+</html>
