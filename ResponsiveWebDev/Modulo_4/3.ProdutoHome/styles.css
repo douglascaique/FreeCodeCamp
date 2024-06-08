@@ -1,3 +1,8 @@
+:root{
+    --background: rgb(20, 30, 40);
+
+}
+
 *,
 ::before,
 ::after {
@@ -13,7 +18,7 @@ html{
 body {
     font-family: "KoHo", sans-serif;
     color: linen;
-    background-color: rgb(20, 30, 40);
+    background-color: var(--background);
 }
 
 #header{
