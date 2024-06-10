@@ -1,0 +1,70 @@
+:root{
+    --laranja: rgb(237, 139, 59);
+    --roxo: rgb(186, 0, 189);
+    --branco: rgb(253, 251, 255);
+}
+
+body{
+    box-sizing: border-box;
+    background: linear-gradient(var(--laranja), var(--roxo));
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: Helvetica, sans-serif;
+}
+
+.nav{
+    display: flex;
+    padding: 10px;
+    justify-content: flex-end;
+    background-color: linear-gradient(to top, black);
+    /* background-color: transparent; */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    /* z-index: 10; */
+}
+
+.nav-list{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+.nav-list li,a{
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    color: var(--branco);
+    text-decoration-line: none;
+}
+
+#welcome-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(black, rgba(237, 139, 59, 0.5));
+}
+
+.welcome-section h1{
+    font-size: 3rem;
+    font-weight: 400;
+    color: var(--branco);
+    margin: 0;
+}
+
+.welcome-section p{
+    font-weight: 100;
+    font-style: italic;
+    color: black;
+    font-size: 1.3rem;
+    margin: 3px;
+    margin-bottom: 30px;
+}
