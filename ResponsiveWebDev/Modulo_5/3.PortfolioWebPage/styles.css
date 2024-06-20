@@ -1,25 +1,31 @@
 :root{
     --laranja: rgb(237, 139, 59);
-    --roxo: rgb(186, 0, 189);
+    --roxo: rgba(231, 231, 231, 0.5);
     --branco: rgb(253, 251, 255);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body{
     box-sizing: border-box;
-    background: linear-gradient(var(--laranja), var(--roxo));
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     font-family: Helvetica, sans-serif;
+    background-image: linear-gradient(black, rgba(237, 139, 59, 0.5));
 }
 
 .nav{
     display: flex;
     padding: 10px;
-    justify-content: flex-end;
-    background-color: linear-gradient(to top, black);
-    /* background-color: transparent; */
+    justify-content: center;
+    background-color: transparent;
     position: fixed;
     width: 100%;
     top: 0;
@@ -32,22 +38,25 @@ body{
     list-style: none;
     justify-content: space-between;
     align-items: center;
-    margin-right: 4vh;
+    border-radius: 5vh;
+    padding: 10px 20px;
+    background-color: rgba(99, 99, 99, 0.8);
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .nav-list li,a{
     text-decoration: none;
-    margin: 0 10px;
-    font-weight: bold;
-    font-size: 1.2rem;
+    margin: 0 2vh;
+    font-weight: 500;
+    font-size: 2.5vh;
     color: var(--branco);
     text-decoration-line: none;
 }
 
 .nav-list a:hover{
-    background-color: var(--roxo); 
+    border-bottom: var(--roxo) 1px solid;
+    transition:  1s ;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
 #welcome-section{
@@ -55,13 +64,15 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 60vh;
     width: 100%;
-    background-image: linear-gradient(black, rgba(237, 139, 59, 0.5));
+    /* background-image: linear-gradient(black, rgba(237, 139, 59, 0.5)); */
+    
 }
 
 .welcome-section h1{
-    font-size: 3rem;
+    font-family: "Playwrite ES", cursive;
+    font-size: 5vw;
     font-weight: 400;
     color: var(--branco);
     margin: 0;
@@ -71,33 +82,42 @@ body{
     font-weight: 100;
     font-style: italic;
     color: var(--roxo);
-    text-shadow: 0 0 2px var(--branco);
     text-shadow: 0 0 2px var(--laranja);
-    font-size: 1.3rem;
+    font-size: 2.5vw;
     margin: 3px;
     margin-bottom: 30px;
 }
 
 .projects-section{
     text-align: center;
-    color: white;
-    background:black;
+    padding: 10rem 2rem;
+}
+
+.projects-section h2{
+    font-size: 3vw;
+    font-weight: 400;
+    color: var(--branco);
+    margin-bottom: 2rem;
 }
 
 .projects-grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
     width: 100%;
     max-width: 1280px;
-    gap: 40rem;
-    margin: 0px auto 6rem;
+    margin: 0px auto;
+    margin-bottom: 6rem;
 
 }
 
 .project{
-    box-shadow: rgba(0, 0, 0, 0.5) 1px 1px 2px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     background-color: gray;
     border-radius: 2px;
+    padding: 10rem 2rem;
+    background-color: var(--branco);
+    text-align: center;
 }
 
 @media only screen and (min-width: 600px) {
