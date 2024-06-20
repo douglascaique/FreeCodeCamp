@@ -53,13 +53,14 @@ body{
     text-decoration-line: none;
 }
 
-.nav-list a:hover, active{
+.nav-list a:hover{
     border: 1vw solid var(--laranja);
     background-color: var(--laranja);
-    border-radius: 2vh;
-    transition: 0.5s ;
+    border-radius: 20px;
+    transition: 0.3s ease-in;
     cursor: pointer;
 }
+
 
 #welcome-section{
     display: flex;
@@ -167,7 +168,29 @@ footer{
     font-size: 1.5vh;
     font-weight: 300;
     margin-top: 2rem;
+}
 
+.btn{
+    padding: 10px 20px;
+    background-color: var(--laranja);
+    color: var(--branco);
+    border: none;
+    border-radius: 5px;
+    font-size: 2vh;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+
+.btn-show-all{
+    padding: 1vw 3vw;
+}
+
+.btn:hover{
+    background-color: var(--branco);
+    color: var(--laranja);
+    border: 0px solid var(--laranja);
+    transition: 0.3s ease-in;
 }
 
 
