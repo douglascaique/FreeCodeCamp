@@ -57,7 +57,7 @@ body{
     border: 1vw solid var(--laranja);
     background-color: var(--laranja);
     border-radius: 2vh;
-    transition: 0.1s ;
+    transition: 0.5s ;
     cursor: pointer;
 }
 
