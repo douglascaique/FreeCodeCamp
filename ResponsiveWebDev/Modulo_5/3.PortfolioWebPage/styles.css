@@ -135,12 +135,12 @@ body{
 .contact-section{
     text-align: center;
     padding: 10rem 2rem;
+    margin-bottom: 10rem;
 }
 
 
 .contact-section-header{
-    margin-bottom: 2rem;
-    
+    margin: 5rem;
 }
 
 .contact-section-header h1{
