@@ -138,6 +138,13 @@ body{
     margin-bottom: 10rem;
 }
 
+.contact-links{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
 
 .contact-section-header{
     margin: 5rem;
@@ -201,9 +208,31 @@ footer{
 
 /* Media Queris */
 
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 800px) {
     body {
-      background-color: lightblue;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-section-header{
+        size-adjust: 2rem;
+    }
+
+    .contact-section-header h1{
+        font-family: "Playwrite ES", cursive;
+        font-size: 5vw;
+        font-weight: 400;
+        color: var(--branco);
+        margin: 0;
+    }
+    .contact-section-header p{
+        font-weight: 100;
+        font-style: italic;
+        color: var(--roxo);
+        text-shadow: 0 0 2px var(--laranja);
+        font-size: 5vw;
+        margin: 3px;
+        margin-bottom: 30px;
     }
   }
 
