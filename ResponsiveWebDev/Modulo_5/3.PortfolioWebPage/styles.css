@@ -53,9 +53,11 @@ body{
     text-decoration-line: none;
 }
 
-.nav-list a:hover{
-    border-bottom: var(--roxo) 1px solid;
-    transition:  1s ;
+.nav-list a:hover, active{
+    border: 1vw solid var(--laranja);
+    background-color: var(--laranja);
+    border-radius: 2vh;
+    transition: 0.1s ;
     cursor: pointer;
 }
 
