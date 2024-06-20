@@ -131,6 +131,8 @@ body{
 }
 
 .contact-section{
+    display: flex;
+    flex-direction: column;
     text-align: center;
     padding: 10rem 2rem;
     margin-bottom: 10rem;
@@ -167,6 +169,8 @@ footer{
     font-weight: 300;
     margin-top: 2rem;
 }
+
+
 
 .btn{
     padding: 10px 20px;
