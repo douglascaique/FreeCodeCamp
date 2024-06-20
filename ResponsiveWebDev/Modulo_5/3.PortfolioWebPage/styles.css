@@ -214,6 +214,24 @@ footer{
         flex-direction: column;
     }
 
+    .welcome-section h1{
+        font-family: "Playwrite ES", cursive;
+        font-size: 10vw;
+        font-weight: 400;
+        color: var(--branco);
+        margin: 0;
+    }
+    
+    .welcome-section p{
+        font-weight: 100;
+        font-style: italic;
+        color: var(--roxo);
+        text-shadow: 0 0 2px var(--laranja);
+        font-size: 5vw;
+        margin: 3px;
+        margin-bottom: 30px;
+    }
+
     .contact-section-header{
         size-adjust: 2rem;
     }
